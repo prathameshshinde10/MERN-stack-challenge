@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.stats {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px; 
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #00696e;
+    margin-bottom: 24px;
+}
+
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 24px;
+}
+
+.bar-chart-container,
+.pie-chart-container {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 24px 0;
+}
+
+.bar-chart-container {
+    min-width: 720px;
+    max-width: 900px;
+    max-height: 500px;
+}
+
+.pie-chart-container {
+    min-width: 320px;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
+.stats .ant-statistic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 24px;
+}
+
+.stats .ant-statistic-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.stats .ant-statistic-content {
+    font-size: 32px;
+    font-weight: bold;
+    color: #00696e;
+}
+
+
+@media (max-width: 768px) {
+    .bar-chart-container, 
+    .pie-chart-container {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .chart-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats .ant-statistic {
+        margin: 12px 0;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats {
+        padding: 16px;
+    }
+
+    .stats .ant-statistic-content {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+
+button {
+    background-color: #00696e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d4a;
+}

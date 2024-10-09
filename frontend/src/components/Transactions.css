@@ -1,0 +1,133 @@
+.transactions-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: auto;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-bar input {
+    height: 40px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.transaction-table .ant-table-thead > tr > th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.transaction-table .ant-table-tbody > tr > td {
+    text-align: center;
+    font-size: 14px;
+    padding: 12px;
+}
+
+.price-column {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.sold-column {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.date-column {
+    color: #6c757d;
+}
+
+.image-column {
+    padding: 8px;
+}
+
+.product-image {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.description-column {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ant-pagination-item {
+    border-radius: 4px;
+}
+
+.ant-pagination-item-active {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.ant-pagination-item a {
+    color: #4CAF50;
+}
+
+.ant-pagination-item-active a {
+    color: white;
+}
+
+.transaction-table .ant-table-title {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .transactions-container {
+        padding: 10px;
+    }
+
+    .search-bar {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .transaction-table .ant-table-tbody > tr > td {
+        font-size: 12px;
+        padding: 8px; 
+    }
+
+    .transaction-table .ant-table-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .transactions-container {
+        padding: 5px;
+    }
+
+    .search-bar {
+        margin-bottom: 10px; 
+    }
+
+    .transaction-table .ant-table-tbody > tr > td {
+        font-size: 10px;
+    }
+
+    .transaction-table .ant-table-title {
+        font-size: 14px; 
+    }
+    .product-image {
+        max-width: 50px;
+    }
+}
